@@ -18,7 +18,8 @@ function finalBank() {
     message.innerHTML = "";
     var nominal = [100000, 50000, 20000]
     try {
-        console.log(atmBank(inputanUser, nominal))
+        // console.log(atmBank(inputanUser, nominal))
+        message.innerHTML = `Nominal yang dikeluarkan ATM adalah ${atmBank(inputanUser, nominal)}`
     } catch (error) {
         message.innerHTML = "  “Maaf, nominal tersebut tidak dapat dikeluarkan oleh mesin ATM”       "
     }
